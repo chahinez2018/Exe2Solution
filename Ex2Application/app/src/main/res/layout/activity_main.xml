@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.midterm.lasalle.ex2application.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="@id/text1"
+        app:layout_constraintRight_toRightOf="@id/text1"
+        app:layout_constraintTop_toTopOf="@id/text1"
+        />
+
+    <Switch
+        android:id="@+id/switchRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat   "
+        app:layout_constraintBottom_toBottomOf="@id/seekBar"
+        app:layout_constraintLeft_toLeftOf="@id/seekBar"
+        app:layout_constraintRight_toRightOf="@id/seekBar"
+        app:layout_constraintTop_toTopOf="@id/seekBar"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/alarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:background="#176fc6"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+</android.support.constraint.ConstraintLayout>
